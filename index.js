@@ -1,11 +1,11 @@
 function dwarfRollCall(dwarves) {
  let dwarf = []
-// for(let dwarve = 0; dwarve< dwarves.length; dwarve++ ){
-  // let dwarfCount = parseInt(dwarve) + 1;
-   //let theDwarf = String(dwarfCount) +'. '+ `${dwarves[dwarve]}`
-   //dwarf.push(theDwarf );
- //}
-// return String(dwarf);
+ for(let dwarve = dwarve.length/2 ; dwarve< dwarves.length ; dwarve++){
+  let dwarfCount = parseInt(dwarve) + 1;
+   let theDwarf = String(dwarfCount) +'. '+ `${dwarves[dwarve]}`
+  dwarf.push(theDwarf );
+ }
+ return String(dwarf);
 }
 
 function dwarfRollCall(dwarves) {
@@ -39,9 +39,27 @@ function longPlaneteerCalls(words){
 
 function findTheCheese (food) {
   for(let i=0; i < food.length ; i++) {
-    if (food[i] === 'camembert' || food[i] === 'gouda' || food[i] === 'cheddar') {
+    if (food[i] === 'camembert' || food[i] === 'gouda' || food[i] === 'cheddar' || food[i] === 'Swiss Cheese') {
       return food[i]
     }
   }
   return "no cheese!"
+}
+
+
+
+
+
+
+
+
+
+
+function wordsWithB(words){
+  let array = [];
+  for(i=0; i<words.length; i++){
+    if (words[i][0] === 'b'){
+      array.push(words[i])
+    }
+  }
 }
